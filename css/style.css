@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box
+}
+
+body, input {
+    font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+
+.navbar-brand, .navbar-brand:hover, .navbar-brand:focus {
+    color: rgba(0, 0, 0);
+    font-size:25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    min-width: 300px;
+    width: 30%;
+    padding: 0 10px;
+    margin: 10px;
+}
+  
+.row {
+    margin: 0 -5px;
+    margin-bottom: 20px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row a {
+    text-decoration: none;
+    color: black;
+}
+
+.cardtop.index {
+    min-height: 440px;
+}
+
+.cardbottom.index {
+    min-height: 500px;
+}
+
+.cardtop.more {
+    min-height: 100px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 1000px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .row {
+        margin-bottom: 0px;
+    }
+    .cardtop, .cardbottom {
+        min-height: 0px;
+    }
+
+    .row.index img {
+        max-width: 500px;
+        max-height: 300px;
+        width: 100%;
+        height: auto;
+    }
+
+    .row.more img {
+        max-width: 500px;
+        max-height: 300px;
+    }
+
+}
+
